@@ -1,0 +1,31 @@
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .players-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .players-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  .players-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.logout {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
