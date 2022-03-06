@@ -10,7 +10,7 @@ export const axiosInstace = axios.create({
 axiosInstace.interceptors.request.use(
   function (config) {
     if (TOKEN) {
-      config.headers["Authorization"] = TOKEN;
+      config.headers["authorization"] = TOKEN;
     }
     return config;
   },
